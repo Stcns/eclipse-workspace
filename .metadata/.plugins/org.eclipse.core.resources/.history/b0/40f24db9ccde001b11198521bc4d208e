@@ -1,0 +1,18 @@
+package upcasting;
+
+public class DownCastingEx {
+
+	public static void main(String[] args) {
+
+		Person p = new Student("±è¼¼Á¾");
+		Student s;
+		
+		s = (Student)p;
+		
+		System.out.println(p.name);
+		s.grade = "A";
+		s.name = "±è¼¼Á¾";
+		
+	}
+
+}

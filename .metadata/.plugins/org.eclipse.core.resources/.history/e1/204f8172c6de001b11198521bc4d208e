@@ -1,0 +1,21 @@
+package upcasting;
+
+public class UpcastingEx {
+
+	public static void main(String[] args) {
+
+		Person p;
+		Student s = new Student("±è¼¼Á¾");
+		
+		p = s;
+		
+		System.out.println(p.name);
+		
+//		p.grade = "A";
+//		p.department = "HR";
+			
+		
+		
+	}
+
+}

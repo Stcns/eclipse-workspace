@@ -1,0 +1,25 @@
+package gamelevel;
+
+public class Player {
+
+	private PlayerLevel level;		// PlayerLevel <자료형>, level <인스턴스명>
+									// level 인스턴스 변수에 객체가 담길 경우 형변환(업캐스팅)
+	public Player() {
+		level = new BeginnerLevel();
+		level.showLevelMessage();
+	}
+	
+	public PlayerLevel getLevel() {
+		return level;
+	}
+	
+	public void upgradeLevel(PlayerLevel level) {
+		this.level = level;
+		level.showLevelMessage();
+	}
+	
+	public void play(int count) {
+		level.go(count);
+	}
+	
+}

@@ -1,0 +1,16 @@
+package inheritance5;
+
+class A{
+	public A() {
+		System.out.println("»ý¼ºÀÚ A");
+	}
+}
+
+
+public class ConstructorEx03 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

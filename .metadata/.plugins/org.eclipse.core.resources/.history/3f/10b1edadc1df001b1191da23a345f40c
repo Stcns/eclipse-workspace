@@ -1,0 +1,8 @@
+package abstractex;
+
+public class Computer {
+
+	public void display();		// 추상 메소드
+	public void typing();		// 추상 메소드
+	
+}

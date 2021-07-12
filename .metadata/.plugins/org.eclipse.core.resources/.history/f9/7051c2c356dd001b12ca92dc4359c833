@@ -1,0 +1,31 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Q14_adv {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		int num = 0;
+		int intArray[];
+		int sum = 0;
+	
+		System.out.print("정수 몇개의 방을 생성할 것입니까? >> ");
+		num = scanner.nextInt();
+		
+		intArray = new int[num];
+	
+		System.out.print("랜덤한 정수들 : ");
+		for(int i = 0; i < intArray.length; i++) {
+			intArray[i] = (int)(Math.random()* 1.0 + 1);
+			System.out.print(intArray[i] + " ");
+			sum += intArray[i];
+		}
+	
+		System.out.println();
+		System.out.println("평균은 " + (double)sum / intArray.length);
+		scanner.close();
+	}
+
+}
